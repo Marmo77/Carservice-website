@@ -64,7 +64,7 @@ export const services = [
         icon: "Wrench"
     },
     {
-        id: "diagnostyka-ecu",
+        id: "chiptuning",
         title: "Diagnostyka ECU / Optymalizacja",
         description:
             "Profesjonalna diagnostyka elektroniki pojazdu, poprawa parametrów pracy silnika oraz indywidualna optymalizacja ustawień sterownika.",
@@ -125,7 +125,7 @@ export const services = [
 ];
 
 export const autoholowaniePricing = [
-    { id: 1, area: "Na terenie Marszewka", priceLoyal: "110,00 zł", priceStandard: "160,00 zł" },
+    { id: 1, area: "Na terenie Goleniowa", priceLoyal: "110,00 zł", priceStandard: "160,00 zł" },
     { id: 2, area: "Do 20 km", priceLoyal: "160,00 zł", priceStandard: "210,00 zł" },
     { id: 3, area: "Powyżej 20 km", priceLoyal: "75,00 zł + 4,20 zł / km", priceStandard: "75,00 zł + 5,20 zł / km" },
     { id: 4, area: "Trasa 200 km - 500 km", priceLoyal: "4,20 zł / km", priceStandard: "5,20 zł / km" },

@@ -6,7 +6,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { services } from "@/data/company";
 
-function FAQItem({ item }: { item: any, index: number }) {
+function FAQItem({ item }: { item: { question: string, answer: string }, index: number }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -78,7 +78,7 @@ export default function Chiptuning() {
         <div className="mt-16">
           <h3 className="text-2xl font-black uppercase text-zinc-900 mb-8">Pytania i odpowiedzi</h3>
           <div className="w-full space-y-4">
-            {service.faq?.map((item: any, index: number) => (
+            {service.faq?.map((item: { question: string, answer: string }, index: number) => (
               <FAQItem key={index} item={item} index={index} />
             ))}
           </div>

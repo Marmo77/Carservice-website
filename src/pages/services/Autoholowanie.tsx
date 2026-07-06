@@ -88,7 +88,7 @@ export default function Holowanie() {
                 <TableHeader className="bg-zinc-100">
                   <TableRow>
                     <TableHead className="w-[40%] font-bold text-zinc-900 py-4 px-6 uppercase text-xs tracking-wider">Trasa / Usługa</TableHead>
-                    <TableHead className="w-[30%] font-bold text-zinc-900 py-4 px-6 uppercase text-xs tracking-wider bg-primary/5">Klienci Auto-Scan</TableHead>
+                    <TableHead className="w-[30%] font-bold text-zinc-900 py-4 px-6 uppercase text-xs tracking-wider bg-primary/5">Klienci {contactInfo.name}</TableHead>
                     <TableHead className="w-[30%] font-bold text-zinc-900 py-4 px-6 uppercase text-xs tracking-wider">Pozostali klienci</TableHead>
                   </TableRow>
                 </TableHeader>

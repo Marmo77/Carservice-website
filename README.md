@@ -1,4 +1,4 @@
-# 🚗 Auto-Scan Goleniów
+# 🚗 NORD-CAR Goleniów
 <p align="center">
   <em>Nowoczesna wizytówka biznesowa zintegrowana z systemem zarządzania ofertami w czasie rzeczywistym.</em>
 </p>
@@ -32,7 +32,7 @@ Frontend projektu został zaprojektowany jako **responsywna aplikacja typu Singl
 ---
 
 ## 📋 Przegląd Projektu
-Projekt **Auto-Scan Goleniów** to kompleksowe rozwiązanie typu „Fullstack Lite”. Stworzone z myślą o lokalnym biznesie, łączy czytelną stronę ofertową z bezpiecznym, odizolowanym systemem zarządzania pojazdami.
+Projekt **NORD-CAR Goleniów** to kompleksowe rozwiązanie typu „Fullstack Lite”. Stworzone z myślą o lokalnym biznesie, łączy czytelną stronę ofertową z bezpiecznym, odizolowanym systemem zarządzania pojazdami.
 
 | Moduł | Cel | Dostęp |
 | :--- | :--- | :--- |
