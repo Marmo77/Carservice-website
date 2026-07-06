@@ -214,8 +214,8 @@ export default function BookingForm() {
 
         <div className="pt-6">
           <p className="text-xs text-zinc-500 mb-6 font-medium flex items-start gap-2 bg-zinc-50 p-3 rounded-md">
-            <input type="checkbox" required className="accent-amber-500 mt-0.5" />
-            <span>Zapoznałem się z <a href="#" className="underline hover:text-primary font-bold">Polityką Prywatności</a> i wyrażam zgodę na przetwarzanie danych w celu obsługi rezerwacji.</span>
+            <input type="checkbox" id="privacy-policy" required className="accent-amber-500 mt-0.5" />
+            <label htmlFor="privacy-policy">Zapoznałem się z <a href="#" className="underline hover:text-primary font-bold">Polityką Prywatności</a> i wyrażam zgodę na przetwarzanie danych w celu obsługi rezerwacji.</label>
           </p>
           <Button type="submit" className="w-full bg-amber-500 hover:bg-amber-600 h-14 text-white font-bold uppercase tracking-widest rounded-md transition-all shadow-md hover:shadow-lg flex items-center justify-center text-lg">
             Dokończ rezerwację

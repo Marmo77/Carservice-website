@@ -42,8 +42,11 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
+            <Route path="uslugi" element={<Navigate to="/#oferta" replace />} />
             <Route path="uslugi/:id" element={<ServiceDetailsPage />} />
             <Route path="sprzedaz" element={<CarSales />} />
+            <Route path="rezerwacja" element={<Navigate to="/#kontakt" replace />} />
+            <Route path="kontakt" element={<Navigate to="/#kontakt" replace />} />
             <Route path="polityka-prywatnosci" element={<PrivacyPolicyPage />} />
             <Route path="regulamin" element={<TermsPage />} />
             <Route path="*" element={<Navigate to="/" replace />} />
