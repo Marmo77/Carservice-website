@@ -1,5 +1,5 @@
-import { Helmet } from 'react-helmet-async';
-import { contactInfo } from '@/data/company';
+import { Helmet } from "react-helmet-async";
+import { contactInfo } from "@/data/company";
 
 interface SEOProps {
   title?: string;
@@ -10,56 +10,49 @@ interface SEOProps {
 }
 
 export default function SEO({
-  title = "Auto-Scan | Kompleksowy Serwis i Stacja Kontroli Pojazdów w Goleniowie",
-  description = "Profesjonalna stacja kontroli pojazdów, serwis mechaniczny, wymiana opon, chiptuning oraz autoholowanie w Goleniowie. Zaufaj naszemu doświadczeniu. Partner DEKRA.",
+  title = "NordCar | Kompleksowy Serwis i Stacja Kontroli Pojazdów w Marszewie",
+  description = "Profesjonalna stacja kontroli pojazdów, serwis mechaniczny, wymiana opon, chiptuning oraz autoholowanie w Marszewie. Zaufaj naszemu doświadczeniu. Partner DEKRA.",
   type = "website",
-  url = "https://auto-scan.pl",
-  image = "https://images.unsplash.com/photo-1625047509248-ec889cbff17f?q=80&w=1200&auto=format&fit=crop"
+  url = "https://nord-car.pl",
+  image = "https://images.unsplash.com/photo-1625047509248-ec889cbff17f?q=80&w=1200&auto=format&fit=crop",
 }: SEOProps) {
-
-  const siteTitle = title.includes("Auto-Scan") ? title : `${title} | Auto-Scan`;
+  const siteTitle = title.includes("Nord-Car") ? title : `${title} | Nord Car`;
 
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "AutoRepair",
-    "name": contactInfo.name,
-    "image": image,
+    name: contactInfo.name,
+    image: image,
     "@id": url,
-    "url": url,
-    "telephone": "+48" + contactInfo.phone.replace(/\s/g, ''),
-    "address": {
+    url: url,
+    telephone: "+48" + contactInfo.phone.replace(/\s/g, ""),
+    address: {
       "@type": "PostalAddress",
-      "streetAddress": contactInfo.street,
-      "addressLocality": contactInfo.city.replace(/[0-9-]/g, '').trim(),
-      "postalCode": contactInfo.city.match(/[0-9-]+/)?.[0] || "72-100",
-      "addressCountry": "PL"
+      streetAddress: contactInfo.street,
+      addressLocality: contactInfo.city.replace(/[0-9-]/g, "").trim(),
+      postalCode: contactInfo.city.match(/[0-9-]+/)?.[0] || "72-100",
+      addressCountry: "PL",
     },
-    "geo": {
+    geo: {
       "@type": "GeoCoordinates",
-      "latitude": 53.5614,
-      "longitude": 14.8258
+      latitude: 53.5614,
+      longitude: 14.8258,
     },
-    "openingHoursSpecification": [
+    openingHoursSpecification: [
       {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday"
-        ],
-        "opens": contactInfo.hours.weekdays.split(' - ')[0] || "08:00",
-        "closes": contactInfo.hours.weekdays.split(' - ')[1] || "17:00"
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        opens: contactInfo.hours.weekdays.split(" - ")[0] || "08:00",
+        closes: contactInfo.hours.weekdays.split(" - ")[1] || "17:00",
       },
       {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": "Saturday",
-        "opens": contactInfo.hours.saturday.split(' - ')[0] || "08:00",
-        "closes": contactInfo.hours.saturday.split(' - ')[1] || "14:00"
-      }
+        dayOfWeek: "Saturday",
+        opens: contactInfo.hours.saturday.split(" - ")[0] || "08:00",
+        closes: contactInfo.hours.saturday.split(" - ")[1] || "14:00",
+      },
     ],
-    "priceRange": "$$"
+    priceRange: "$$",
   };
 
   return (
