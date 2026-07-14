@@ -4,7 +4,6 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import PageSkeleton from "@/components/PageSkeleton";
 import CookieConsent from "@/components/CookieConsent";
-import WaterMarkBanner from "@/components/WaterMarkBanner";
 
 export default function Layout() {
   return (
@@ -14,7 +13,7 @@ export default function Layout() {
         <Suspense fallback={<PageSkeleton />}>
           <Outlet />
         </Suspense>
-        <WaterMarkBanner />
+        {/* <WaterMarkBanner /> */}
       </main>
       <Footer />
       <CookieConsent />
